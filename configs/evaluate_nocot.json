@@ -1,0 +1,16 @@
+{
+  "model_name": "fintune/qwen25-14b",
+  "checkpoint_path": "output/NTU2012/525noCOT/final",
+  "base_path": "dataset/NTU2012",
+  "label_file": "labels.txt",
+  "edge_file": "hyperedges.txt",
+  "split_file_path": "dataset/NTU2012/community_split_trainnum6.json",
+  "output_path": "output/NTU2012/eval_results_nocot.json",
+  "log_file": "output/NTU2012/debug_expansion_nocot.log",
+  "max_candidates": 6,
+  "max_new_tokens": 16,
+  "temperature": 0.01,
+  "num_seeds_per_comm_test": 100,
+  "seed": 42,
+  "prompt_style": "direct"
+}

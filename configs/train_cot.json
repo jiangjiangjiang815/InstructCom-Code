@@ -1,0 +1,32 @@
+{
+  "model_name": "fintune/qwen25-14b",
+  "data_path": "dataset/synthetic-2000-20/train_cot.jsonl",
+  "output_dir": "output/synthetic-2000-20/cot_run",
+  "max_length": 4096,
+  "per_device_train_batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "learning_rate": 5e-5,
+  "num_train_epochs": 5,
+  "logging_steps": 5,
+  "save_steps": 50,
+  "save_total_limit": 2,
+  "optim": "paged_adamw_8bit",
+  "bf16": true,
+  "max_grad_norm": 1.0,
+  "warmup_ratio": 0.03,
+  "lr_scheduler_type": "linear",
+  "gradient_checkpointing": false,
+  "dataloader_num_workers": 8,
+  "lora_r": 128,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ]
+}

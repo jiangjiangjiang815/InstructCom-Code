@@ -1,0 +1,15 @@
+{
+  "model_name": "fintune/qwen25-14b",
+  "checkpoint_path": "output/synthetic-2000-20/cot_run/final",
+  "base_path": "dataset/contact-high-school",
+  "label_file": "labels.txt",
+  "edge_file": "hyperedges.txt",
+  "split_file_path": "dataset/contact-high-school/community_split_trainnum6.json",
+  "output_path": "output/contact-high/eval_results_trainnum6.json",
+  "log_file": "output/contact-high/debug_expansion_trainnum6.log",
+  "max_candidates": 6,
+  "max_new_tokens": 1024,
+  "temperature": 0.01,
+  "num_seeds_per_comm_test": 100,
+  "seed": 42
+}
