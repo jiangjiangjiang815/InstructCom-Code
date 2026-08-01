@@ -96,7 +96,7 @@ Entrypoint:
 ```text
 code/inference/InstrucCom.py
 ```
-The inference script loads the base model and the trained LoRA adapter, then performs multi-seed community expansion on the test communities.
+The inference script loads the base model and the trained LoRA adapter, then performs community expansion on the test communities.
 ### Example
 
 ```bash
